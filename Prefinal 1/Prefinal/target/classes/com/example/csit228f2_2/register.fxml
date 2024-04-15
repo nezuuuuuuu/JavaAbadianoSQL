@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228f2_2.Register">
+   <children>
+      <TextField fx:id="username" layoutX="158.0" layoutY="91.0" promptText="username" />
+      <PasswordField fx:id="password" layoutX="158.0" layoutY="135.0" promptText="password" />
+      <Label layoutX="147.0" layoutY="14.0" text="REGISTER" />
+      <PasswordField fx:id="confirmpasswordtxt" layoutX="158.0" layoutY="174.0" promptText="confirm password" />
+      <Button layoutX="172.0" layoutY="223.0" mnemonicParsing="false" onAction="#Registeruser" text="Register" />
+      <Label  fx:id="emptyname" layoutX="346.0" layoutY="95.0" text="Cannot be empty" textFill="RED" visible="false" />
+      <Label  fx:id="emptypass" layoutX="346.0" layoutY="139.0" text="Cannot be empty" textFill="RED" visible="false" />
+      <Label fx:id="doesnotmatch" layoutX="346.0" layoutY="178.0" text="does not match" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
