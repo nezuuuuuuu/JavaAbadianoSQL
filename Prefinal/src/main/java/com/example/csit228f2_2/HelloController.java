@@ -111,4 +111,16 @@ public class HelloController extends Component {
         }
 
     }
+    @FXML
+    public void openBooksBorrowed(ActionEvent actionEvent) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("borrowed_books.fxml"));
+        try {
+            Stage stage= (Stage) tbNight.getScene().getWindow();
+            Scene scene = new Scene(loader.load());
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
